@@ -12,4 +12,5 @@ const source = fs.readFileSync(inboxPath, "utf8")
 
 let out = solc.compile(source,1)
 
+console.log(out)
 module.exports = out.contracts[':Inbox']
